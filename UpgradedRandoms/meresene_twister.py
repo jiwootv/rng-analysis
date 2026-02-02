@@ -24,3 +24,4 @@ class Meresene_twister:
 			elif type == "float": self.l.append(self.next_float())
 			else: raise ValueError(f"잘못된 Type값입니다. int 또는 float을 입력하십시오. 현재 {type}이/가 입력되었습니다.")
 		print(self.l)
+		return self.l

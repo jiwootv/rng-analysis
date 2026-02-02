@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cb8ab16-09c8-4de6-8687-54f6012f7b29" name="변경" comment="첫번째 커밋 (아 굽네치킨 먹고싶다아)">
+    <list default="true" id="1cb8ab16-09c8-4de6-8687-54f6012f7b29" name="변경" comment="두번째 커밋 (함수 몇개 좀 추가함)">
+      <change afterPath="$PROJECT_DIR$/BaseCode/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BaseCode/show_scatter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UpgradedRandoms/randu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/그냥 난수 생성/Randu/2차원 산점도.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/그냥 난수 생성/베이스코드/산점도.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Random_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Random_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UpgradedRandoms/XorShift32.py" beforeDir="false" afterPath="$PROJECT_DIR$/UpgradedRandoms/XorShift32.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UpgradedRandoms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/UpgradedRandoms/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UpgradedRandoms/lcg.py" beforeDir="false" afterPath="$PROJECT_DIR$/UpgradedRandoms/lcg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UpgradedRandoms/meresene_twister.py" beforeDir="false" afterPath="$PROJECT_DIR$/UpgradedRandoms/meresene_twister.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UpgradedRandoms/middle_square.py" beforeDir="false" afterPath="$PROJECT_DIR$/UpgradedRandoms/middle_square.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/그냥 난수 생성/산점도.py" beforeDir="false" afterPath="$PROJECT_DIR$/그냥 난수 생성/산점도.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,44 +35,46 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jiwootv"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jiwootv&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jiwootv/rng-analysis.git",
-    "accountId": "d6348422-5901-4c87-a165-6305ad3a4fc7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jiwootv/rng-analysis.git&quot;,
+    &quot;accountId&quot;: &quot;d6348422-5901-4c87-a165-6305ad3a4fc7&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="38e61ZPw4ZmAHxfmjh7GnAlK2e0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Just Random.executor": "Run",
-    "Python.Just...executor": "Run",
-    "Python.Random Test.executor": "Run",
-    "Python.Random_test.executor": "Run",
-    "Python.__init__.executor": "Run",
-    "Python.meresene_twister.executor": "Run",
-    "Python.그래프를 생성하다.executor": "Run",
-    "Python.산점도.executor": "Run",
-    "Python.아시발집가고싶다.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/PC/PycharmProjects/난수판별/Random_test.py",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.2차원 산점도.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Just Random.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Just...executor&quot;: &quot;Run&quot;,
+    &quot;Python.Random Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Random_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.meresene_twister.executor&quot;: &quot;Run&quot;,
+    &quot;Python.show_scatter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.그래프를 생성하다.executor&quot;: &quot;Run&quot;,
+    &quot;Python.산점도.executor&quot;: &quot;Run&quot;,
+    &quot;Python.아시발집가고싶다.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/PycharmProjects/난수판별/Random_test.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <myKeys>
       <visibility group="Python 파일 실행" flag="true" />
@@ -137,12 +149,21 @@
       <option name="project" value="LOCAL" />
       <updated>1769153201374</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="두번째 커밋 (함수 몇개 좀 추가함)">
+      <option name="closed" value="true" />
+      <created>1769154837306</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1769154837306</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="첫번째 커밋 (아 굽네치킨 먹고싶다아)" />
-    <option name="LAST_COMMIT_MESSAGE" value="첫번째 커밋 (아 굽네치킨 먹고싶다아)" />
+    <MESSAGE value="두번째 커밋 (함수 몇개 좀 추가함)" />
+    <option name="LAST_COMMIT_MESSAGE" value="두번째 커밋 (함수 몇개 좀 추가함)" />
   </component>
 </project>
