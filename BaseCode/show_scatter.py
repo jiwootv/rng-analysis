@@ -55,12 +55,12 @@ class ShowScatter:
 		plt.show()
 
 if __name__ == "__main__":
-	import UpgradedRandoms
-	R = UpgradedRandoms.Randu()
+	import RngModels
+	R = RngModels.Randu()
 	k = R.get_value_list(1, 10000)
-	L = UpgradedRandoms.LCG()
+	L = RngModels.LCG()
 	l = L.get_value_list(10000, "u32")
-	M = UpgradedRandoms.Middle_Square()
+	M = RngModels.Middle_Square()
 	a = M.get_value_list(1000, 'int')
 	S = ShowScatter(a, "Midsquare show", point_size=5)
 	S.plot_3d_scatter()

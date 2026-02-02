@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import UpgradedRandoms
+import RngModels
 
 isol_gay = 10000
 alpha = 1
@@ -49,5 +49,5 @@ def plot_3d_scatter(nums, n=None, s=5, alpha=0.4):
 
 
 # nums = [0.12, 0.45, 0.78, 0.33, 0.91, 0.04]
-plot_2d_scatter(UpgradedRandoms.Randu.get_value_list(999, 10000), color="red")
-# plot_3d_scatter(chuck_chu)
+plot_3d_scatter(RngModels.Randu().get_value_list(999, 10000))
+#plot_3d_scatter()
