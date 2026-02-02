@@ -1,0 +1,249 @@
+Index: Random_test.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import UpgradedRandoms\r\n\r\nL = UpgradedRandoms.LCG()\r\nM = UpgradedRandoms.Middle_Square()\r\nX = UpgradedRandoms.Xorshift32()\r\nR = UpgradedRandoms.Meresene_twister()\r\n\r\nM.get_value_list(61, \"float\")
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Random_test.py b/Random_test.py
+--- a/Random_test.py	(revision f82f5ee04cade53bd6f640d9e937d4cef12023ac)
++++ b/Random_test.py	(date 1769155344588)
+@@ -1,8 +1,13 @@
+ import UpgradedRandoms
++import numpy
++import math
+ 
+ L = UpgradedRandoms.LCG()
+ M = UpgradedRandoms.Middle_Square()
+ X = UpgradedRandoms.Xorshift32()
+ R = UpgradedRandoms.Meresene_twister()
+ 
+-M.get_value_list(61, "float")
+\ No newline at end of file
++# 예시: 중앙제곱법 표준편차와 값 샘플 뽑기
++midsqr = M.get_value_list(1000, "float")
++print(math.sqrt(numpy.var(midsqr)))
++
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1cb8ab16-09c8-4de6-8687-54f6012f7b29\" name=\"변경\" comment=\"첫번째 커밋 (아 굽네치킨 먹고싶다아)\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Random_test.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Random_test.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/UpgradedRandoms/meresene_twister.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/UpgradedRandoms/meresene_twister.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\r\n  \"lastFilter\": {\r\n    \"state\": \"OPEN\",\r\n    \"assignee\": \"jiwootv\"\r\n  }\r\n}]]></component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/jiwootv/rng-analysis.git\",\r\n    \"accountId\": \"d6348422-5901-4c87-a165-6305ad3a4fc7\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 0\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"38e61ZPw4ZmAHxfmjh7GnAlK2e0\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Python.Just Random.executor\": \"Run\",\r\n    \"Python.Just...executor\": \"Run\",\r\n    \"Python.Random Test.executor\": \"Run\",\r\n    \"Python.Random_test.executor\": \"Run\",\r\n    \"Python.__init__.executor\": \"Run\",\r\n    \"Python.meresene_twister.executor\": \"Run\",\r\n    \"Python.그래프를 생성하다.executor\": \"Run\",\r\n    \"Python.산점도.executor\": \"Run\",\r\n    \"Python.아시발집가고싶다.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"last_opened_file_path\": \"C:/Users/PC/PycharmProjects/난수판별/Random_test.py\",\r\n    \"settings.editor.selected.configurable\": \"reference.settingsdialog.IDE.editor.colors\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunAnythingCache\">\r\n    <myKeys>\r\n      <visibility group=\"Python 파일 실행\" flag=\"true\" />\r\n      <visibility group=\"conda 명령어 실행\" flag=\"true\" />\r\n      <visibility group=\"pip 명령어 실행\" flag=\"true\" />\r\n      <visibility group=\"실행 구성\" flag=\"true\" />\r\n      <visibility group=\"최근 프로젝트\" flag=\"true\" />\r\n    </myKeys>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Random_test\" type=\"PythonConfigurationType\" factoryName=\"Python\" nameIsGenerated=\"true\">\r\n      <module name=\"난수판별\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"SDK_NAME\" value=\"Python 3.12 (난수판별)\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Random_test.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-975db3bf15a3-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.18034.82\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"애플리케이션 수준\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"디폴트 작업\">\r\n      <changelist id=\"1cb8ab16-09c8-4de6-8687-54f6012f7b29\" name=\"변경\" comment=\"\" />\r\n      <created>1769147474376</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1769147474376</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"첫번째 커밋 (아 굽네치킨 먹고싶다아)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1769149867741</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1769149867741</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"첫번째 커밋 (아 굽네치킨 먹고싶다아)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1769152054645</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1769152054645</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"첫번째 커밋 (아 굽네치킨 먹고싶다아)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1769153201374</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1769153201374</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Initial commit\" />\r\n    <MESSAGE value=\"첫번째 커밋 (아 굽네치킨 먹고싶다아)\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"첫번째 커밋 (아 굽네치킨 먹고싶다아)\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f82f5ee04cade53bd6f640d9e937d4cef12023ac)
++++ b/.idea/workspace.xml	(date 1769960415248)
+@@ -4,10 +4,14 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="1cb8ab16-09c8-4de6-8687-54f6012f7b29" name="변경" comment="첫번째 커밋 (아 굽네치킨 먹고싶다아)">
++    <list default="true" id="1cb8ab16-09c8-4de6-8687-54f6012f7b29" name="변경" comment="두번째 커밋 (함수 몇개 좀 추가함)">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Random_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Random_test.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/UpgradedRandoms/XorShift32.py" beforeDir="false" afterPath="$PROJECT_DIR$/UpgradedRandoms/XorShift32.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/UpgradedRandoms/lcg.py" beforeDir="false" afterPath="$PROJECT_DIR$/UpgradedRandoms/lcg.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/UpgradedRandoms/meresene_twister.py" beforeDir="false" afterPath="$PROJECT_DIR$/UpgradedRandoms/meresene_twister.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/UpgradedRandoms/middle_square.py" beforeDir="false" afterPath="$PROJECT_DIR$/UpgradedRandoms/middle_square.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/그냥 난수 생성/산점도.py" beforeDir="false" afterPath="$PROJECT_DIR$/그냥 난수 생성/산점도.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -25,44 +29,44 @@
+     <option name="PUSH_AUTO_UPDATE" value="true" />
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN",
+-    "assignee": "jiwootv"
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;jiwootv&quot;
+   }
+-}]]></component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/jiwootv/rng-analysis.git",
+-    "accountId": "d6348422-5901-4c87-a165-6305ad3a4fc7"
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/jiwootv/rng-analysis.git&quot;,
++    &quot;accountId&quot;: &quot;d6348422-5901-4c87-a165-6305ad3a4fc7&quot;
+   }
+-}]]></component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 0
+-}]]></component>
++}</component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 0
++}</component>
+   <component name="ProjectId" id="38e61ZPw4ZmAHxfmjh7GnAlK2e0" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Python.Just Random.executor": "Run",
+-    "Python.Just...executor": "Run",
+-    "Python.Random Test.executor": "Run",
+-    "Python.Random_test.executor": "Run",
+-    "Python.__init__.executor": "Run",
+-    "Python.meresene_twister.executor": "Run",
+-    "Python.그래프를 생성하다.executor": "Run",
+-    "Python.산점도.executor": "Run",
+-    "Python.아시발집가고싶다.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "master",
+-    "last_opened_file_path": "C:/Users/PC/PycharmProjects/난수판별/Random_test.py",
+-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Python.Just Random.executor&quot;: &quot;Run&quot;,
++    &quot;Python.Just...executor&quot;: &quot;Run&quot;,
++    &quot;Python.Random Test.executor&quot;: &quot;Run&quot;,
++    &quot;Python.Random_test.executor&quot;: &quot;Run&quot;,
++    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
++    &quot;Python.meresene_twister.executor&quot;: &quot;Run&quot;,
++    &quot;Python.그래프를 생성하다.executor&quot;: &quot;Run&quot;,
++    &quot;Python.산점도.executor&quot;: &quot;Run&quot;,
++    &quot;Python.아시발집가고싶다.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/PycharmProjects/난수판별/Random_test.py&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunAnythingCache">
+     <myKeys>
+       <visibility group="Python 파일 실행" flag="true" />
+@@ -137,12 +141,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1769153201374</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="두번째 커밋 (함수 몇개 좀 추가함)">
++      <option name="closed" value="true" />
++      <created>1769154837306</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1769154837306</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Initial commit" />
+     <MESSAGE value="첫번째 커밋 (아 굽네치킨 먹고싶다아)" />
+-    <option name="LAST_COMMIT_MESSAGE" value="첫번째 커밋 (아 굽네치킨 먹고싶다아)" />
++    <MESSAGE value="두번째 커밋 (함수 몇개 좀 추가함)" />
++    <option name="LAST_COMMIT_MESSAGE" value="두번째 커밋 (함수 몇개 좀 추가함)" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: UpgradedRandoms/lcg.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#\r\n\r\nclass LCG:\r\n\tdef __init__(self, seed=1, a=1664525, c=1013904223, m=2**32):\r\n\t\tself.x = seed\r\n\t\tself.a = a\r\n\t\tself.c = c\r\n\t\tself.m = m\r\n\r\n\tdef next_u32(self):\r\n\t\tself.x = (self.a * self.x + self.c) % self.m\r\n\t\treturn self.x\r\n\r\n\tdef next_float(self):\r\n\t\treturn self.next_u32() / self.m\r\n\r\n\tdef get_value_list(self, len: int, type: str):\r\n\t\t\"\"\"\r\n\t\tlen: 값의 길이\r\n\t\tType: 타입. u32 또는 float을 선택 가능합니다.\r\n\t\t\"\"\"\r\n\t\tself.l = []\r\n\t\tfor i in range(len):\r\n\t\t\tif type == \"int\": self.l.append(self.next_int())\r\n\t\t\telif type == \"float\": self.l.append(self.next_float())\r\n\t\t\telse: raise ValueError(f\"잘못된 Type값입니다. u32 또는 float을 입력하십시오. 현재 {type}이/가 입력되었습니다.\")\r\n\t\tprint(self.l)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/UpgradedRandoms/lcg.py b/UpgradedRandoms/lcg.py
+--- a/UpgradedRandoms/lcg.py	(revision f82f5ee04cade53bd6f640d9e937d4cef12023ac)
++++ b/UpgradedRandoms/lcg.py	(date 1769155190393)
+@@ -21,7 +21,8 @@
+ 		"""
+ 		self.l = []
+ 		for i in range(len):
+-			if type == "int": self.l.append(self.next_int())
++			if type == "u32": self.l.append(self.next_u32())
+ 			elif type == "float": self.l.append(self.next_float())
+ 			else: raise ValueError(f"잘못된 Type값입니다. u32 또는 float을 입력하십시오. 현재 {type}이/가 입력되었습니다.")
+-		print(self.l)
+\ No newline at end of file
++		print(self.l)
++		return self.l
+\ No newline at end of file
+Index: 그냥 난수 생성/산점도.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import random\r\nimport matplotlib.pyplot as plt\r\n\r\npos = [_-_ for _ in range(1, 696969)]\r\n# [0, 0, ..., 0]\r\n# [(0, 0), (0,0)\r\n\r\ndef angang(sibal):\r\n\tfor i in range(sibal):\r\n\t\trandom.seed(i)\r\n\t\tpos[i]  = (i, random.randint(1, sibal+1))\r\n\tplt.scatter([pos[k][0] for k in range(1, sibal)], [pos[k][1] for k in range(1, sibal)])\r\n\tplt.show()\r\n\r\nangang(69)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/그냥 난수 생성/산점도.py b/그냥 난수 생성/산점도.py
+--- a/그냥 난수 생성/산점도.py	(revision f82f5ee04cade53bd6f640d9e937d4cef12023ac)
++++ b/그냥 난수 생성/산점도.py	(date 1769155494231)
+@@ -12,4 +12,4 @@
+ 	plt.scatter([pos[k][0] for k in range(1, sibal)], [pos[k][1] for k in range(1, sibal)])
+ 	plt.show()
+ 
+-angang(69)
+\ No newline at end of file
++angang(1000)
+\ No newline at end of file
+Index: UpgradedRandoms/middle_square.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># 중앙제곱법\r\n# 분산 개@쓰레기;;\r\nclass Middle_Square:\r\n\tdef __init__(self, seed=1234, digits=4):\r\n\t\tself.x = seed\r\n\t\tself.d = digits\r\n\t\tself.mod = 10**digits\r\n\r\n\tdef next_int(self):\r\n\t\tsq = self.x * self.x\r\n\t\t# 가운데 digits만 뽑기\r\n\t\t# 예: digits=4면 sq를 8자리로 보고 가운데 4자리\r\n\t\ts = str(sq).zfill(self.d * 2)\r\n\t\tmid = s[self.d//2 : self.d//2 + self.d]\r\n\t\tself.x = int(mid) % self.mod\r\n\t\treturn self.x\r\n\r\n\tdef next_float(self):\r\n\t\treturn self.next_int() / self.mod\r\n\r\n\tdef get_value_list(self, len: int, type: str):\r\n\t\t\"\"\"\r\n\t\tlen: 값의 길이\r\n\t\tType: 타입. int 또는 float을 선택 가능합니다.\r\n\t\t\"\"\"\r\n\t\tself.l = []\r\n\t\tfor i in range(len):\r\n\t\t\tif type == \"int\": self.l.append(self.next_int())\r\n\t\t\telif type == \"float\": self.l.append(self.next_float())\r\n\t\t\telse: raise ValueError(f\"잘못된 Type값입니다. int 또는 float을 입력하십시오. 현재 {type}이/가 입력되었습니다.\")\r\n\t\tprint(self.l)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/UpgradedRandoms/middle_square.py b/UpgradedRandoms/middle_square.py
+--- a/UpgradedRandoms/middle_square.py	(revision f82f5ee04cade53bd6f640d9e937d4cef12023ac)
++++ b/UpgradedRandoms/middle_square.py	(date 1769155012998)
+@@ -28,4 +28,5 @@
+ 			if type == "int": self.l.append(self.next_int())
+ 			elif type == "float": self.l.append(self.next_float())
+ 			else: raise ValueError(f"잘못된 Type값입니다. int 또는 float을 입력하십시오. 현재 {type}이/가 입력되었습니다.")
+-		print(self.l)
+\ No newline at end of file
++		print(self.l)
++		return self.l
+\ No newline at end of file
+Index: UpgradedRandoms/XorShift32.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>class Xorshift32:\r\n\tdef __init__(self, seed=2463534242):\r\n\t\tself.x = seed & 0xFFFFFFFF\r\n\r\n\tdef next_u32(self):\r\n\t\tx = self.x\r\n\t\tx ^= (x << 13) & 0xFFFFFFFF\r\n\t\tx ^= (x >> 17) & 0xFFFFFFFF\r\n\t\tx ^= (x << 5)  & 0xFFFFFFFF\r\n\t\tself.x = x & 0xFFFFFFFF\r\n\t\treturn self.x\r\n\r\n\tdef next_float(self):\r\n\t\treturn self.next_u32() / 2**32\r\n\r\n\tdef get_value_list(self, len: int, type: str):\r\n\t\t\"\"\"\r\n\t\tlen: 값의 길이\r\n\t\tType: 타입. u32 또는 float을 선택 가능합니다.\r\n\t\t\"\"\"\r\n\t\tself.l = []\r\n\t\tfor i in range(len):\r\n\t\t\tif type == \"int\": self.l.append(self.next_int())\r\n\t\t\telif type == \"float\": self.l.append(self.next_float())\r\n\t\t\telse: raise ValueError(f\"잘못된 Type값입니다. u32 또는 float을 입력하십시오. 현재 {type}이/가 입력되었습니다.\")\r\n\t\tprint(self.l)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/UpgradedRandoms/XorShift32.py b/UpgradedRandoms/XorShift32.py
+--- a/UpgradedRandoms/XorShift32.py	(revision f82f5ee04cade53bd6f640d9e937d4cef12023ac)
++++ b/UpgradedRandoms/XorShift32.py	(date 1769155013016)
+@@ -23,4 +23,5 @@
+ 			if type == "int": self.l.append(self.next_int())
+ 			elif type == "float": self.l.append(self.next_float())
+ 			else: raise ValueError(f"잘못된 Type값입니다. u32 또는 float을 입력하십시오. 현재 {type}이/가 입력되었습니다.")
+-		print(self.l)
+\ No newline at end of file
++		print(self.l)
++		return self.l
+\ No newline at end of file
+Index: UpgradedRandoms/meresene_twister.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># 메르센 트위스트\r\n# python 기본 random 라이브러리가 이 알고리즘을 사용해서 넣어봄\r\n# 딸깍 ㅋㅋㅋㅋㅋ\r\nimport random\r\n\r\nclass Meresene_twister:\r\n\tdef __init__(self, seed=None):\r\n\t\tself.rng = random.Random(seed)\r\n\r\n\tdef next_float(self):\r\n\t\treturn self.rng.random()   # [0, 1)\r\n\r\n\tdef next_int(self, a=0, b=2**32-1):\r\n\t\treturn self.rng.randint(a, b)\r\n\r\n\tdef get_value_list(self, len: int, type: str):\r\n\t\t\"\"\"\r\n\t\tlen: 값의 길이\r\n\t\tType: 타입. int 또는 float을 선택 가능합니다.\r\n\t\t\"\"\"\r\n\t\tself.l = []\r\n\t\tfor i in range(len):\r\n\t\t\tif type == \"int\": self.l.append(self.next_int())\r\n\t\t\telif type == \"float\": self.l.append(self.next_float())\r\n\t\t\telse: raise ValueError(f\"잘못된 Type값입니다. int 또는 float을 입력하십시오. 현재 {type}이/가 입력되었습니다.\")\r\n\t\tprint(self.l)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/UpgradedRandoms/meresene_twister.py b/UpgradedRandoms/meresene_twister.py
+--- a/UpgradedRandoms/meresene_twister.py	(revision f82f5ee04cade53bd6f640d9e937d4cef12023ac)
++++ b/UpgradedRandoms/meresene_twister.py	(date 1769155013020)
+@@ -23,4 +23,5 @@
+ 			if type == "int": self.l.append(self.next_int())
+ 			elif type == "float": self.l.append(self.next_float())
+ 			else: raise ValueError(f"잘못된 Type값입니다. int 또는 float을 입력하십시오. 현재 {type}이/가 입력되었습니다.")
+-		print(self.l)
+\ No newline at end of file
++		print(self.l)
++		return self.l
+\ No newline at end of file
